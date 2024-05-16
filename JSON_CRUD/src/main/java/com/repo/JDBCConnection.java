@@ -5,9 +5,9 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class JDBCConnection {
-	String url = "jdbc:mysql://localhost:3306/Student_Details";
+	String url = "jdbc:mysql://localhost:3306/JSON_DB";
 	String userName = "root";
-	String password = "root";
+	String password = "RDJ.krish1";
 
 	public Connection establishConnection() {
 
