@@ -171,7 +171,7 @@ public class JSONCRUD {
                         }
                     }
                 } catch (JSONException e) {
-                    // Handle JSON exception, if needed
+
                     e.printStackTrace();
                 }
             }
@@ -240,7 +240,7 @@ public class JSONCRUD {
     JSONObject updateValue(JSONObject json, String key, String newValue) {
         boolean exists = json.has(key);
         if (exists) {
-            json.put(key, newValue); // Update the value associated with the key
+            json.put(key, newValue);
         } else {
             Iterator<?> keys = json.keys();
             while (keys.hasNext()) {
